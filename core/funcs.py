@@ -285,7 +285,7 @@ async def generate_cover(title, ctitle, chatid, thumbnail):
     os.remove(f"temp{chatid}.png")
     os.remove(f"thumb{chatid}.png")
     final = f"final{chatid}.png"
-
+    return final
 
 async def special_to_normal(ctitle):
     string = ctitle
