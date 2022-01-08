@@ -36,19 +36,18 @@ from core import (
     get_youtube_playlist)
 
 
-REPO = """
-🤖 **Music Player**
-- Repo: [GitHub](https://github.com/AsmSafone/MusicPlayer)
-- License: AGPL-3.0-or-later
+Bugs = """
+🤖 **Any Bugs**
+- Contact Here @Pratheek06
 """
 
 
 @app.on_message(
-    filters.command("repo", config.PREFIXES) & ~filters.private & ~filters.edited
+    filters.command("bugs", config.PREFIXES) & ~filters.private & ~filters.edited
 )
 @handle_error
 async def repo(_, message: Message):
-    await message.reply_text(REPO, disable_web_page_preview=True)
+    await message.reply_text(Bugs, disable_web_page_preview=True)
 
 
 @app.on_message(
