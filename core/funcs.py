@@ -281,11 +281,10 @@ async def generate_cover(title, ctitle, chatid, thumbnail):
         fill="white",
         font=font2,
     )
-    img.save(f"cache/final{userid}.png")
-    os.remove(f"cache/temp{userid}.png")
-    os.remove(f"cache/thumb{userid}.jpg")
-    final = f"cache/final{userid}.png"
-    return final
+    img.save(f"final{chatid}.png")
+    os.remove(f"temp{chatid}.png")
+    os.remove(f"thumb{chatid}.png")
+    final = f"final{chatid}.png"
 
 
 async def special_to_normal(ctitle):
