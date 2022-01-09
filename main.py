@@ -278,7 +278,7 @@ async def resume_vc(_, message: Message, lang):
 
 
 @app.on_message(
-    filters.command(["stop", "leave"], config.PREFIXES)
+    filters.command(["end", "leave"], config.PREFIXES)
     & ~filters.private
     & ~filters.edited
 )
