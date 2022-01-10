@@ -55,7 +55,7 @@ async def repo(_, message: Message):
 )
 @handle_error
 async def ping(_, message: Message):
-    await message.reply_text(f"🤖 **Pong!**\n`{await pytgcalls.ping} ms`")
+    await message.reply_text(f"🏓 **Pong!**\n`{await pytgcalls.ping} ms`")
 
 
 @app.on_message(
